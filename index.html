@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>3D Pudding</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@0.158.0/build/three.module.js",
+          "three/addons/": "https://unpkg.com/three@0.158.0/examples/jsm/"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div id="fixed-ui">
+      <h1>
+        Choose your<br />
+        <span class="pudding-fade">Pudding</span><br />
+        Taste
+      </h1>
+      <div id="nav-bar">
+        <button class="nav-btn" data-model="chori">Chori</button>
+        <button class="nav-btn" data-model="parang">Parang</button>
+        <button class="nav-btn" data-model="sani">Sani</button>
+        <button class="nav-btn" data-model="nove">Nove</button>
+        <button class="nav-btn" data-model="langu">Langgu</button>
+      </div>
+    </div>
+
+    <div id="blur-circle"></div>
+    <div id="blur-circle2"></div>
+
+    <!-- 푸딩 보이는 캔버스 -->
+    <canvas id="bg-canvas"></canvas>
+
+    <script type="module" src="main.js"></script>
+  </body>
+</html>

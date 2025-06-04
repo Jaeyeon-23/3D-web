@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  font-family: "Pretendard", sans-serif;
+  overflow: hidden;
+  --hover-text-color: #014c8d;
+}
+
+/* choose pudding taste */
+#fixed-ui h1 {
+  position: absolute;
+  width: 502px;
+  height: 300px;
+  left: 118px;
+  top: 150px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 96px;
+  line-height: 100px;
+  letter-spacing: -0.08em;
+  color: #fcfcfc;
+  z-index: 10;
+}
+
+/*Pudding 흐리게 */
+.pudding-fade {
+  color: rgb(255, 255, 255, 0.4);
+}
+
+/* 네비게이션 바 */
+#nav-bar {
+  position: absolute;
+  top: 540px;
+  left: 118px;
+  display: flex;
+  gap: 15px;
+  z-index: 10;
+}
+
+/* 기본 버튼*/
+.nav-btn {
+  padding: 6px 16px;
+  border-radius: 9999px;
+  border: 1px solid white;
+  background-color: transparent; /* 투명배경 */
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* 호버 : 배경 흰색, 글씨색은 현재 푸딩 배경색 */
+.nav-btn.hover-effect {
+  background-color: white !important;
+  color: var(--hover-text-color) !important;
+}
+
+/* 원1 */
+#blur-circle {
+  position: absolute;
+  width: 384.84px;
+  height: 384.84px;
+  left: 740.18px;
+  top: 223.58px;
+  background: rgba(239, 239, 239, 0.8);
+  filter: blur(125px);
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* 원2 */
+#blur-circle2 {
+  position: absolute;
+  width: 384.84px;
+  height: 384.84px;
+  left: -150px;
+  bottom: -150px;
+  background: rgba(239, 239, 239, 0.8);
+  filter: blur(125px);
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Three.js 캔버스 */
+canvas#bg-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0; /* 제일 뒤 */
+}
